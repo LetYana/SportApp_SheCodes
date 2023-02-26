@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>activity🏃</title>
+    <title>🏃 activity</title>
     <style>
       body {
         background: radial-gradient(
@@ -12,10 +12,11 @@
           rgb(255, 231, 230) 0%,
           rgb(234, 241, 249) 90.1%
         );
+        margin: 0;
       }
 
       h1 {
-        margin: 30px auto 0px auto;
+        margin: 60px auto 0px auto;
         text-align: center;
         font-size: 110px;
         font-family: "Lucida Bright", Cambria, sans-serif;
@@ -41,17 +42,16 @@
 
       button {
         display: block;
-        font-size: 39px;
+        font-size: 30px;
         font-family: "Gadugi", Arial, sans-serif;
         text-transform: uppercase;
         letter-spacing: 5px;
         color: rgb(50, 50, 50);
         text-align: center;
-        padding: 15px 75px 17px 75px;
+        padding: 14px 65px 16px 65px;
         background-color: transparent;
         border: 1px solid #000;
-        margin-top: 80px;
-        margin-left: 40px;
+        margin-top: 70px;
         transition: all 150ms ease;
       }
 
@@ -81,7 +81,7 @@
       }
 
       .rect {
-        height: 20px;
+        height: 12px;
         width: 200px;
         background: rgb(0, 0, 0);
         display: block;
@@ -90,7 +90,8 @@
 
       .container {
         background-color: #fafafa;
-        width: 1000px;
+        width: 60%;
+        max-width: 1000px;
         margin: 0 auto;
         padding-bottom: 120px;
       }
@@ -104,14 +105,14 @@
       }
 
       .textover img {
-        width: 100%;
+        max-width: 100%;
         align-items: center;
       }
 
       .textover figcaption {
         position: absolute;
-        bottom: 195px;
-        left: 95px;
+        top: 80px;
+        left: 100px;
       }
 
       .learn-more {
@@ -124,6 +125,121 @@
         margin-left: 100px;
         margin-bottom: 100px;
       }
+
+      @media (max-width: 1500px) {
+        .container {
+          width: 80%;
+        }
+
+        .textover figcaption {
+          top: 110px;
+        }
+
+        button {
+          margin-top: 50px;
+        }
+
+        p {
+          font-size: 21px;
+        }
+      }
+
+      @media (max-width: 1000px) {
+        .container {
+          width: 100%;
+        }
+
+        p {
+          font-size: 19px;
+        }
+      }
+
+      @media (max-width: 800px) {
+        h1 {
+          font-size: 80px;
+        }
+
+        h2 {
+          font-size: 28px;
+        }
+
+        button {
+          font-size: 18px;
+          padding: 12px 55px 14px 55px;
+          margin-top: 30px;
+        }
+
+        svg {
+          width: 150px;
+        }
+      }
+
+      @media (max-width: 700px) {
+        h1 {
+          font-size: 60px;
+        }
+
+        .textover figcaption {
+          left: 70px;
+        }
+
+        p {
+          padding: 0 70px;
+        }
+
+        .learn-more {
+          margin-left: 70px;
+        }
+      }
+
+      @media (max-width: 620px) {
+        .textover figcaption {
+          top: 60px;
+          left: 40px;
+        }
+
+        h2 {
+          font-size: 21px;
+        }
+
+        hr {
+          display: none;
+        }
+
+        p {
+          margin-top: 28px;
+        }
+      }
+
+      @media (max-width: 450px) {
+        .textover figcaption {
+          position: static;
+          margin-left: 70px;
+        }
+
+        .textover img {
+          transform: translateX(-16%);
+        }
+      }
+
+      @media (max-width: 400px) {
+        .textover figcaption {
+          margin-left: 14%;
+        }
+
+        h1 {
+          font-size: 42px;
+        }
+
+        p {
+          padding: 0 14%;
+          font-size: 16px;
+        }
+
+        .learn-more {
+          margin-left: 70px;
+        }
+      }
     </style>
   </head>
   <body>
@@ -131,7 +247,7 @@
       <div class="rect"></div>
       <h1>Movement</h1>
       <figure class="textover">
-        <img src="img/avctive.png" alt="running_woman" />
+        <img src="img/active.png" alt="running_woman" />
         <figcaption>
           <div class="div_over">
             <h2>
